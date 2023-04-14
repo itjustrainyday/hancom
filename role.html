@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/*[title|=flower]{
+    border: 5px solid yellow;
+}*/
+/*img[title ~= flower] {border : 5px solid yellow;}*/
+img[title $= flower] {border : 5px solid yellow;}
+</style>
+<body>
+    <h2>CSS [attribute] Selector</h2> 
+    <p>The links with a target attribute gets a yellow background:</p>
+    <img src="C:\Users\ehdgk\Desktop/송아가그려줌.png" title="klematis flower" width="150"
+    height="113">
+    <img src="C:\Users\ehdgk\Desktop/송아가그려줌.png" title="flower" width="224" height="162">
+    <img src="C:\Users\ehdgk\Desktop/송아가그려줌.png" title="treeflower" width="200" height="358">
+
+</body>
+</head>
+</html>
