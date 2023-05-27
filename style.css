@@ -1,0 +1,40 @@
+body{
+    margin : 0;
+}
+a{
+    text-decoration: none;
+    color : rgb(241, 241, 241);
+}
+.navset {
+    display: flex;/*padding margin 값 강제로 깎아서*/
+    justify-content: space-between;
+    align-items : center;
+    background-color: rgb(167, 46, 167);
+    padding : 8px 12px;
+}
+.nav__logo{
+    padding-left : 10px;
+}
+.nav__manual{
+    display : flex;
+    list-style: none;
+}
+.nav__manual li {
+    padding : 8px 12px;
+}
+.nav__icons {
+    padding-right: 30px;
+    list-style : none;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.main li{
+    list-style:none;
+}
+
+.endpoint li{
+    list-style: none;
+}
