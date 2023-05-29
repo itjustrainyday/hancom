@@ -1,9 +1,15 @@
-body{
-    margin : 0;
+html, body{
+    margin : 0; padding : 0;
+    height : 100%;
 }
 a{
     text-decoration: none;
     color : rgb(241, 241, 241);
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 .navset {
     display: flex;/*padding margin 값 강제로 깎아서*/
@@ -11,9 +17,12 @@ a{
     align-items : center;
     background-color: rgb(167, 46, 167);
     padding : 8px 12px;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size : 25px;
 }
 .nav__logo{
     padding-left : 10px;
+    font-size: 40px;
 }
 .nav__manual{
     display : flex;
@@ -22,23 +31,47 @@ a{
 .nav__manual li {
     padding : 8px 12px;
 }
+.nav__manual li:hover{
+    background-color: black;
+    border-radius : 8px;
+}
 .nav__icons {
     padding-right: 30px;
     list-style : none;
 }
 .main{
     display: flex;
+    flex : 1;
     justify-content: center;
-    align-items:center;
 }
 .main img{
     width : 350px;
     height: 350px;
 }
+.infod li{
+    list-style : none;
+}
 .main li{
     list-style:none;
 }
-
+.pub{
+    color : red;
+}
+.pub li:hover {
+    background-color: #a0a0a0;
+    border-radius : 6px;
+}
 .endpoint li{
     list-style: none;
+}
+.mystacks i{
+    size : 32px;
+}
+footer{
+    padding : 8px 0;
+}
+.endpoint li {
+    color : #a0a0a0;
+    text-align: center;
+    font-size : 10px;
 }
