@@ -2,7 +2,8 @@ html, body{
     margin : 0; padding : 0;
     height : 100%;
 }
-a{
+/*윗 로고 */
+.navset a{
     text-decoration: none;
     color : rgb(241, 241, 241);
 }
@@ -10,6 +11,10 @@ a{
     display: flex;
     flex-direction: column;
     height: 100%;
+}
+.main a{
+    text-decoration: none;
+    color : darkslateblue 
 }
 .navset {
     display: flex;/*padding margin 값 강제로 깎아서*/
@@ -39,36 +44,64 @@ a{
     padding-right: 30px;
     list-style : none;
 }
+/* 모든 html 파일 공통*/
 .main{
     display: flex;
     flex : 1;
     justify-content: center;
 }
+.main li{
+    list-style:none;
+}
+/* index(메인 화면)*/
 .main img{
     width : 350px;
     height: 350px;
 }
+.introduce li{
+    font-family: 'Oswald', sans-serif;
+    font-size : 18px;
+}
+.alink{
+    font-size:16px;
+    color:red;
+}
+#web{
+    color : mediumspringgreen;
+    font-size : 25px;
+}
+/*stacks(기술) 부분*/
+.stacks1{
+    font-size : 20px;
+}
+.fa-c, .fa-java, .fa-python{
+    font-size : 200px;
+}
+/*contact(외부 링크)*/
+
+/*about me(나에 대한 자세한 소개)*/
 .infod li{
     list-style : none;
+    line-height: 30px;
+    font-family: 'Cabin', sans-serif;
+    font-size : 20px;
 }
-.main li{
-    list-style:none;
-}
+/*publication(내가 했던 것들)*/
 .pub{
     color : red;
+
 }
 .pub li:hover {
     background-color: #a0a0a0;
     border-radius : 6px;
 }
+/*끝부분*/
 .endpoint li{
     list-style: none;
 }
-.mystacks i{
-    size : 32px;
-}
 footer{
     padding : 8px 0;
+    flex-shrink: 0;
 }
 .endpoint li {
     color : #a0a0a0;
