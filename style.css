@@ -44,20 +44,46 @@ html, body{
     padding-right: 30px;
     list-style : none;
 }
+.nav_toggle{
+    position: absolute;
+    right: 15px;
+    font-size: 20px;
+    /*display:none;*/
+}
 /* 모든 html 파일 공통*/
 .main{
     display: flex;
-    flex : 1;
     justify-content: center;
+    flex-direction: row;
+    max-width: 800px;
+    margin: 0 auto;  
+
 }
 .main li{
     list-style:none;
 }
 /* index(메인 화면)*/
-.main img{
-    width : 350px;
-    height: 350px;
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    
 }
+.introduce{
+    min-width: 200x;
+    flex-basis: 150px;
+    flex-grow: 1;
+  
+
+}
+.main img{
+    position: relative;
+    width : 80%;
+    height: 100%;
+    overflow: hidden; 
+
+}
+
 .introduce li{
     font-family: 'Oswald', sans-serif;
     font-size : 18px;
@@ -86,14 +112,10 @@ html, body{
     font-family: 'Cabin', sans-serif;
     font-size : 20px;
 }
-/*publication(내가 했던 것들)*/
-.pub{
-    color : red;
-
-}
-.pub li:hover {
-    background-color: #a0a0a0;
-    border-radius : 6px;
+/*interest (취미 부분)*/
+.interest li h3{
+    font-family: 'Oswald', 'sans-serif';
+    font-size : 20px;
 }
 /*끝부분*/
 .endpoint li{
@@ -101,10 +123,46 @@ html, body{
 }
 footer{
     padding : 8px 0;
-    flex-shrink: 0;
+    flex-direction: row;
+    
 }
 .endpoint li {
     color : #a0a0a0;
     text-align: center;
     font-size : 10px;
+}
+
+@media screen and (max-width: 785px) {
+    .main{
+        flex-direction: column;
+    }
+    
+    .navset{
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+          
+    }
+
+    .nav__manual {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+      
+    .nav__manual li {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    /*
+    .nav_toggle{
+        display : block;
+    }
+    .nav__manual.active{
+        display : flex;
+    }
+    */
+
 }
