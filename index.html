@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Jayhan.e</title>
     <link rel = "stylesheet" href = "style.css">
+   
+  
     <script src="https://kit.fontawesome.com/fd1e6de581.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +20,9 @@
         <a href = "index.html">
         My Space
         </a>
+
         </div>
+
         <ul class ="nav__manual">
             <li>
             <a href ="aboutme.html">About Me</a>
@@ -33,20 +37,31 @@
                 <a href = "contact.html">Contact</a>
             </li>
         </ul>
+    
+        
+     
     </nav>
-    <section class = "main introduce">
-        <img src = "img/KakaoTalk_20230525_174344553.jpg" id = "mainp">
-        <br>
-        <ul>
-            <li><h1>Jung dong han</h1></li>
-            <li id = "web">Intersting in Server & Web Deisgn</li>
-            <li>&nbsp;</li>
-            <li>Hello, this is my webPage for my assignment</li>
-            <li>Although I'm a junior developer, I hope</li>
-            <li>you like this page thank you.</li>
-            <li>&nbsp;</li>
-            <li><a href ="mailto:rainyday1367@naver.com"><p class = alink>rainyday1367@naver.com</p></a>  <a href = "https://cse.kangwon.ac.kr/cse/index.do"><i class="fa-solid fa-house alink"></i></li>
-        </ul>
+    <section class = "main">
+        <div class="flexbox"></div>
+            <div class="main introduce">
+                <img src = "img/KakaoTalk_20230525_174344553.jpg" id = "mainp">
+            </div>
+        
+            <div class ="main introduce ">
+                <ul>
+                    <li><h1>Jung dong han</h1></li>
+                    <li id = "web">Intersting in Server & Web Deisgn</li>
+                    <li>&nbsp;</li>
+                    <li>Hello, this is my webPage for my assignment</li>
+                    <li>Although I'm a junior developer, I hope</li>
+                    <li>you like this page thank you.</li>
+                    <li>&nbsp;</li>
+                    <li><a href ="mailto:rainyday1367@naver.com"><p class = alink>rainyday1367@naver.com</p></a>|<a href = "https://cse.kangwon.ac.kr/cse/index.do"><i class="fa-solid fa-house alink"></i></a></li>
+                </ul>
+            </div>
+      
+        </div>
+
     </section>
     <footer class = "endpoint">
         <ul>
@@ -55,8 +70,18 @@
             <li>It's still being edited</li>
         </ul>
     </footer>
+  
 </div>
-</body>
-</head>
-</html>
 
+</body>
+<!--<script src = "https://code.jquery.com/jquery-3.6.0.js"></script>
+<script>
+    const toggleBtn = document.querySelector('.nav_toggle');
+    const menu = document.querySelector('.navbar__manual');
+    function sideMenuClick(){
+        menu.classList.toggle('active');
+       
+    }
+    menu.addEventListener("click",sideMenuClick);
+</script>-->
+</html>
