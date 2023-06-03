@@ -48,7 +48,7 @@ html, body{
     position: absolute;
     right: 15px;
     font-size: 20px;
-    /*display:none;*/
+    display:none;
 }
 /* 모든 html 파일 공통*/
 .main{
@@ -113,7 +113,9 @@ html, body{
     font-size : 20px;
 }
 /*interest (취미 부분)*/
-.interest li h3{
+.interest li h3{.navbar__menu li {
+    padding: 8px 30px;
+  }
     font-family: 'Oswald', 'sans-serif';
     font-size : 20px;
 }
@@ -131,6 +133,25 @@ footer{
     text-align: center;
     font-size : 10px;
 }
+.navset{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+}
+  
+
+.nav__manual{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding-left: 0;
+}
+
+.nav__manual li {
+    padding: 8px 30px;
+  }
+
 
 @media screen and (max-width: 785px) {
     .main{
@@ -145,6 +166,7 @@ footer{
     }
 
     .nav__manual {
+        display: none;
         flex-direction: column;
         align-items: center;
         width: 100%;
@@ -155,14 +177,13 @@ footer{
         text-align: center;
     }
 
-
-    /*
+    
     .nav_toggle{
         display : block;
     }
+
     .nav__manual.active{
         display : flex;
     }
-    */
 
 }
